@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youth Red Cross of MIT</title>
+<link rel="icon" href="logo.png">
+
+
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f7f7f7; /* Light gray background */
+	margin: 0;
+	background: radial-gradient(circle, #ffffff, #d3d3d3 70%);
+	/* Subtle gradient from white to light gray */
+}
+
+.login-container {
+	background-color: #ffffff; /* White background for the container */
+	border: 2px solid #d3d3d3; /* Light gray border */
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(128, 128, 128, 0.5); /* Softer gray shadow */
+	padding: 30px;
+	text-align: center;
+	width: 350px;
+	margin-left: 100px;
+}
+
+h1 {
+	color: #333333; /* Dark gray for text */
+	margin-bottom: 20px;
+}
+
+.input-group {
+	margin: 10px 0;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	border: 2px solid #c0c0c0; /* Lighter gray for input borders */
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #f9f9f9; /* Very light gray input background */
+	color: #333333; /* Dark gray text */
+}
+
+input:focus {
+	border-color: #808080; /* Slightly darker gray when focused */
+	outline: none;
+}
+
+button {
+	background-color: #c0c0c0; /* Light gray button */
+	color: #ffffff; /* White text */
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	width: 100%;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #808080; /* Darker gray on hover */
+}
+
+#message {
+	margin-top: 15px;
+	font-size: 14px;
+	color: #666666; /* Medium gray text */
+}
+</style>
+<link rel="stylesheet" href="stylesadmin.css">
+</head>
+<body>
+	<div>
+		<h1 style="margin-bottom: 50px;">Welcome to the Admin Dashboard
+			of MIT YRC Club!</h1>
+		<div class="login-container">
+			<h1 style="font-size: 40px;">Login</h1>
+			<form id="loginForm">
+				<div class="input-group">
+					<input type="text" id="username" placeholder="Username" required>
+				</div>
+				<div class="input-group">
+					<input type="password" id="password" placeholder="Password"
+						required>
+				</div>
+				<button type="submit">Login</button>
+				<p id="message"></p>
+			</form>
+		</div>
+	</div>
+
+	<script src="login.js"></script>
+</body>
+</html>

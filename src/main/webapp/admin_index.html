@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Red Cross of MIT</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="admin_style.css">
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    .icon-circle {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #f1f1f1;
+      margin: 10px;
+      font-size: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      flex-direction: column; /* Stacks the icon and label vertically */
+      text-align: center;
+    }
+    .icon-circle .lni {
+      font-size: 50px;
+    }
+    .blood-icon {
+      background-color: #e74c3c; /* Red color for blood */
+      color: white;
+    }
+    .scribe-icon {
+      background-color: #3498db; /* Blue color for scribe request */
+      color: white;
+    }
+    .quote-section {
+      margin-bottom: 30px;
+    }
+    .quote-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icon-label {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    /* Logout Icon Styling */
+    .logout-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: #000;
+    }
+    .logout-link {
+      color: inherit;
+      text-decoration: none;
+    }
+    .logout-link:hover {
+      color: #e74c3c; /* Red color on hover */
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  
+
+  <div class="wrapper">
+
+    <!-- Main Content -->
+    <div class="main p-3">
+      <div class="text-center">
+        <!-- Heading -->
+        <h1 class="py-3">MIT YRC - Health. Service. Friendship.</h1>
+        
+        <!-- Button with Logout Icon -->
+<button id="logoutButton" onclick="location.href='login.html';"
+    style="margin-right:15px; color: white; position: fixed; top: 20px; right: 20px; background-color: #333; border: none; border-radius: 50%; padding: 15px; font-size: 20px; cursor: pointer;">
+    <i class="fas fa-sign-out-alt" style="color:white;"></i> <!-- Font Awesome logout icon -->
+</button>
+
+        
+        <!-- Carousel -->
+        <div class="container">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="7"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote Section -->
+      <div class="quote-section text-center mt-5">
+        <blockquote class="blockquote">
+          <p>"The best way to find yourself is to lose yourself in the service of others." - Mahatma Gandhi</p>
+        </blockquote>
+        <br>
+        <br>
+        <blockquote class="blockquote"></blockquote>
+        <br>
+        <br>
+        <!-- Icons Section -->
+        <div class="quote-icons">
+          <!-- Blood Icon -->
+          <div class="icon-circle blood-icon">
+            <i class="lni lni-drop"></i> <!-- Blood drop icon -->
+            <div class="icon-label"><a href="blooddb.jsp">Blood</a></div>
+          </div>
+          &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;
+          <!-- Scribe Icon -->
+          <div class="icon-circle scribe-icon">
+            <i class="lni lni-pencil"></i> <!-- Scribe request icon -->
+            <div class="icon-label"><a href="scribeRequest.jsp">Scribe</a></div>
+          </div>
+           &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;   &nbsp; &nbsp;
+          <!-- Scribe Icon -->
+          <div class="icon-circle session-icon">
+  	<i class="lni lni-calendar"></i> <!-- Calendar icon for Session -->
+  	<div class="icon-label"><a href="SessionServlet">Session</a></div>
+	</div>
+
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <blockquote class="blockquote">
+          <p>"Service to others is the rent you pay for your room here on earth"</p>
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
